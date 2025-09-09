@@ -1,19 +1,29 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import lightImage from "../../../public/assets/img/sun.png";
 import handleSwitchValue from "../../../utils/theme";
 
 const SwitchDark = () => {
   const [isDark, setIsDark] = useState(false);
 
-  const handleLabelClick = () => {
-    if (isDark) {
-      handleSwitchValue(true)
-      setIsDark(false);
-    } else {
-      handleSwitchValue(false)
+  // Initialize theme from localStorage on component mount
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme-color");
+    if (savedTheme === "dark") {
       setIsDark(true);
+      document.querySelector("body").classList.add("dark");
+      document.querySelector("body").classList.remove("light");
+    } else {
+      setIsDark(false);
+      document.querySelector("body").classList.add("light");
+      document.querySelector("body").classList.remove("dark");
     }
+  }, []);
+
+  const handleLabelClick = () => {
+    const newIsDark = !isDark;
+    setIsDark(newIsDark);
+    handleSwitchValue(!newIsDark); // Toggle the theme
   };
 
   return (
