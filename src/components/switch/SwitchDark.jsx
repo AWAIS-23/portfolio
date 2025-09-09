@@ -27,20 +27,21 @@ const SwitchDark = () => {
   };
 
   return (
-    <label className={`theme-switcher-label d-flex  ${isDark ? "active" : ""}`} style={{position: "static"}}>
+    <label className={`theme-switcher-label d-flex ${isDark ? "active" : ""}`} style={{position: "static"}}>
       <input
         type="checkbox"
         onClick={handleLabelClick}
         className="theme-switcher"
+        checked={isDark}
+        onChange={() => {}} // This is needed to suppress React warning about controlled inputs
       />
       <div className="switch-handle">
         <span className="light-text">
-          <Image src={lightImage} alt="swicher" className="filter_1" priority />
+          <i className="fa fa-sun-o" aria-hidden="true"></i>
         </span>
         <span className="dark-text">
           <i className="fa fa-moon-o" aria-hidden="true"></i>
         </span>
-
       </div>
     </label>
   );
