@@ -6,7 +6,7 @@ import Image from "next/image";
 const heroContent = {
   heroImage: "/assets/img/hero/dark.jpg",
   heroMobileImage: "/assets/img/hero/img-mobile.jpg",
-  heroTitleName: "Huzaifa Umer",
+  heroTitleName: "Awais Asghar",
   heroDesignation: "MERN Stack Developer",
   heroDescriptions: `I'm a passionate MERN Stack Developer from Punjab, Pakistan. 
   With a strong foundation in React JS, Next JS, Tailwind CSS, MongoDB, Node js through professional experience, 

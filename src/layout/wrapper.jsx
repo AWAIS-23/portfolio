@@ -7,17 +7,12 @@ import 'react-toastify/dist/ReactToastify.css';
 const Wrapper = ({ children }) => {
   // Apply theme class to body when component mounts
   useEffect(() => {
-    // Check for saved theme preference or use system preference
     const savedTheme = localStorage.getItem('theme-color');
     if (savedTheme) {
       document.body.classList.add(savedTheme);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      // If no saved preference, use system preference
+    } else {
       document.body.classList.add('dark');
       localStorage.setItem('theme-color', 'dark');
-    } else {
-      document.body.classList.add('light');
-      localStorage.setItem('theme-color', 'light');
     }
   }, []);
 

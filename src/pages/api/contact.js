@@ -17,12 +17,12 @@ export default async function handler(req, res) {
       port: 465,
       secure: true,
       auth: {
-        user: "khichihuzaifa@gmail.com",
+        user: "khichiAwais Asghar@gmail.com",
         pass: "uggv jonu vybp wkvo",
       },
     });
 
-    const toAddress = "khichihuzaifa@gmail.com";
+    const toAddress = "khichiAwais Asghar@gmail.com";
 
     const info = await transporter.sendMail({
       from: `${name} `,

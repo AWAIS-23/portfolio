@@ -151,7 +151,7 @@ const PortfolioData = [
         status: "Completed",
         language: "HTML, CSS, Javascript",
         preview: "www.quiz-app.com",
-        link: "https://quiz-app-huzaifa-js.netlify.app/",
+        link: "https://quiz-app-Awais Asghar-js.netlify.app/",
       },
     ],
   },

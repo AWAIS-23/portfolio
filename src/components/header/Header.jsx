@@ -30,7 +30,7 @@ const Header = () => {
               lineHeight: "25px",
             }}
           >
-            HUZAIFA UMER
+            Awais Asghar
           </p>
         </div>
         <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ""}`}>
@@ -71,12 +71,12 @@ const Header = () => {
               <span></span>
             </button>
           </div>
-          <div className="mt-3">
+          <div className="mt-4">
             <SwitchDark />
           </div>
         </div>
       </div>
-    </header>
+    </header> 
   );
 };
 
