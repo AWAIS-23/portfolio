@@ -1,14 +1,14 @@
 import React from "react";
 
 const personalInfoContent = [
-  { meta: "first name", metaInfo: "Awais Asghar", hasColor: "" },
-  { meta: "last name", metaInfo: "Umer", hasColor: "" },
+  { meta: "first name", metaInfo: "Awais ", hasColor: "" },
+  { meta: "last name", metaInfo: "Asghar", hasColor: "" },
   { meta: "Age", metaInfo: "22 Years", hasColor: "" },
   { meta: "Nationality", metaInfo: "Pakistan", hasColor: "" },
   { meta: "Freelance", metaInfo: "Available", hasColor: "green" },
-  { meta: "Address", metaInfo: "32A Gulfishan Colony, Gulshan-e-ravi Lahore, Pakistan.", hasColor: "" },
+  { meta: "Address", metaInfo: "276 karim block Allama iqbal town Lahore, Pakistan", hasColor: "" },
   { meta: "phone", metaInfo: "+923136652912", hasColor: "" },
-  { meta: "Email", metaInfo: "khichiAwais Asghar@gmail.com", hasColor: "" },
+  { meta: "Email", metaInfo: "muhammmadawais65u@gmail.com", hasColor: "" },
   { meta: "langages", metaInfo: "English, Urdu, Hindi", hasColor: "" },
 ];
 
