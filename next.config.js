@@ -1,13 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
-    unoptimized: true,   // disable image optimization for static export
+    unoptimized: true,
   },
-  // Remove unsupported output option for Next.js 13.0.2. Use `next export` after build instead.
   eslint: {
-    // Prevent ESLint from running during production builds to avoid OOM on limited environments
     ignoreDuringBuilds: true,
   },
+  // Ensure Next.js only looks for pages in src/pages
+  pageExtensions: ['jsx', 'js'],
+  experimental: {
+    appDir: false,
+  }
 }
 
 module.exports = nextConfig

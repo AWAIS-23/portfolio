@@ -5,14 +5,14 @@ const Address = () => {
     <>
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-map position-absolute"></i>
-        <span className="d-block">Address Point</span> 32A Gulfishan Colony, Gulshan-e-ravi Lahore, Pakistan.
+        <span className="d-block">Address Point</span> 276 karim block Allama iqbal town lahore
       </p>
       {/* End .custom-span-contact */}
 
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-envelope-open position-absolute"></i>
         <span className="d-block">mail me</span>{" "}
-        <a href="mailto:steve@mail.com">Awais Asghar@nexoracodes.com</a>
+        <a href="mailto:steve@mail.com">muhammadawais65u@gmail.com</a>
       </p>
       {/* End .custom-span-contact */}
 
